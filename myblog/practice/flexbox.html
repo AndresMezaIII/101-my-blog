@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+        font-size: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: lightgray;
+        height: 40vh;
+        align-items: center;
+      }
+
+      
+      .navigation {
+        display: flex;
+        background-color: lightblue;
+        justify-content: space-between;
+        align-items: center;
+        height: 20vh;
+      }
+
+      .logo {
+        background-color: blue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+      }
+
+      .button {
+        background-color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+
+    <div class="container">
+      <div class="card">1</div>
+      <div class="card">2</div>
+      <div class="card">3</div>
+    </div>
+
+      <div class="navigation">
+        <div class="logo">Logo</div>
+        <nav>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </nav>
+        <a href="#" class="button">Button</a>
+      </div>
+   
+  </body>
+</html>
