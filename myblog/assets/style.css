@@ -1,6 +1,6 @@
 /*globals*/
 * {
-  font-family: helvetica;
+  font-family: "Manrope";
   margin: 0px;
   padding: 0px;
 }
@@ -8,7 +8,6 @@
 /*body*/
 body {
   background-color: #30634a;
-  min-height: 100vh;
 }
 
 a {
@@ -18,7 +17,6 @@ a {
 }
 
 /*header*/
-
 /*navigation*/
 .nav {
   height: 50px;
@@ -28,6 +26,14 @@ a {
   justify-content: space-around;
   align-items: center;
   background-color: white;
+}
+
+/*tied to button-control in the contact section*/
+.button-y {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 2px;
 }
 
 /*main*/
@@ -60,7 +66,6 @@ a {
   font-weight: 200;
   color: white;
   text-align: center;
-  font-family: serif;
   margin-top: 10px;
 }
 
@@ -72,24 +77,9 @@ a {
 img {
   height: 200px;
   width: 250px;
-  margin: 10px;
+  margin: 30px 10px 10px 10px;
   border-radius: 10%;
 }
-
-/*
-.main-art-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.infographic {
-  height: 600px;
-  width: 325px;
-  display: inline-block;
-  margin-top: 20px;
-}
-*/
 
 .blurb-con {
   display: flex;
@@ -97,14 +87,15 @@ img {
   flex-wrap: nowrap;
   align-items: center;
   gap: 30px;
+  margin-top: 50px;
 }
 
 .blurb {
   height: 200px;
-  width: 450px;
+  width: 350px;
   margin: 5px;
   color: #398768;
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
 /*footer*/
@@ -139,8 +130,15 @@ img {
 
 .flex-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 10px;
+}
+
+.card-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 h2 {
@@ -177,8 +175,9 @@ h2 {
 .don-stack {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+  max-width: 900px;
 }
 
 .donate {
@@ -202,7 +201,7 @@ h2 {
 .h1-donate {
   font-size: 14px;
   color: white;
-  text-aline: center;
+  text-align: center;
   font-weight: 400;
 }
 
@@ -212,3 +211,89 @@ h2 {
   align-items: center;
   flex-direction: column;
 }
+
+/*CONTACT FORM*/
+.con-h1 {
+  text-align: center;
+  color: #0c5b31;
+  font-weight: 400;
+} 
+.con-h3 {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 5px
+  margin-bottom: 15px;
+}
+
+.pi-flex-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.con-p-div {
+  width: 45%;
+  margin: 15px 10px 10px 10px;
+}
+
+
+.con-p {
+  color: #143328;
+}
+
+.con-img {
+  border: 1px solid #143328;
+}
+
+.form {
+  background-color: #0c5b31;;
+  width: 35%;
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #143328;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.input-container label {
+  width: 20%;
+  padding: 5px;
+}
+
+.input-container input,
+.input-container textarea {
+  border-radius: 5px;
+  width: 75%
+  padding: 10px;
+  border: #143328;
+}
+
+textarea {
+  height: 100px;
+}
+
+.button-control {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+button {
+  width: 70px;
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  size: 12px;
+  letter-spacing: 3px; 
+}
+
+
+
+

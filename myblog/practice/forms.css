@@ -1,0 +1,25 @@
+.form-container {
+  background-color: cyan;
+  margin: 10px;
+  padding: 40px;
+  border: 2px solid black;
+}
+
+.input-container,
+.input-container textarea {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+label {
+  width: 15%;
+}
+
+button {
+  border-radius: 15%;
+  background-color: yellow;
+  color: green;
+  padding: 10px;
+}
