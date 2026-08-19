@@ -1,6 +1,6 @@
 /*globals*/
 * {
-  font-family: "Manrope";
+  font-family: helvetica, sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -8,12 +8,6 @@
 /*body*/
 body {
   background-color: #30634a;
-}
-
-a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #0c5b31;
 }
 
 /*header*/
@@ -26,42 +20,34 @@ a {
   justify-content: space-around;
   align-items: center;
   background-color: white;
+  
+}
+
+.nav a {
+  color: #0c5b31;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 /*tied to button-control in the contact section*/
-.button-y {
-  background-color: green;
-  color: white;
+.button-yellow {
+  background-color: #efff6b;
   padding: 10px;
   border-radius: 2px;
 }
 
 /*main*/
-.large-txt-one {
+.large-txt {
   font-size: 4rem;
   font-weight: 700;
   text-align: right;
-  margin: 5px 45% 5px 0;
-  color: #2c7058;
-  display: positioned;
-}
-
-.large-txt-two {
-  font-size: 4rem;
-  font-weight: 700;
-  text-align: right;
-  margin: 5px 300px 5px 0;
-  color: #2c7058;
-  display: positioned;
-}
-
-.top-hr {
-  width: 50%;
-  margin-left: 500px;
+  color: #0c5b31;
+  text-align: center;
+  font-weight: 600;
 }
 
 .sm-txt {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: left;
   font-weight: 200;
   color: white;
@@ -69,47 +55,55 @@ a {
   margin-top: 10px;
 }
 
-.bottom-hr {
-  width: 50%;
-  margin-left: 250px;
-}
-
-img {
-  height: 200px;
-  width: 250px;
-  margin: 30px 10px 10px 10px;
-  border-radius: 10%;
-}
-
-.blurb-con {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
+.attention-getter-flex {
+  display: inline-flex;
+  justify-content: flex-start;
   align-items: center;
-  gap: 30px;
-  margin-top: 50px;
+}
+
+.img-gilogo {
+  height: 400px;
+  width: 400px;
+  border-radius: 10%;
+  margin: 30px 10px 10px 30px;
+
 }
 
 .blurb {
-  height: 200px;
-  width: 350px;
-  margin: 5px;
-  color: #398768;
-  padding-top: 30px;
+  font-size: 20px;
+  color: #143328;
+  text-indent: 25px;
+  height: 400px;
+  width: 400px;
+  padding: 45px 0 0 0;
+  margin-left: 20px;
+}
+
+.aside-flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.aside-p {
+  font-size: 48px;
+  margin: 0 40px 0 0;
+  color: #efff6b;
+}
+
+.img-handshake {
+  height: 400px;
+  width: 400px;
+  border-radius: 10%;
+  margin: 30px 10px 10px 30px;
 }
 
 /*footer*/
 .footer {
   color: #143328;
-  font-size: 1rem;
-  font-weight: 300;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  min-height: 100vh;
-}
-
-.footer p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
   margin-top: auto;
 }
 
@@ -130,9 +124,13 @@ img {
 
 .flex-section {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 10px;
+}
+
+.succ-image {
+  width: 300px;
+  height: 300px;
 }
 
 .card-layout {
@@ -141,13 +139,8 @@ img {
   justify-content: center;
 }
 
-h2 {
-  margin: 50px 0px;
-  text-align: center;
-}
-
 .card {
-  background-color: #48b083;
+  background-color: white;
   padding: 10px;
   border-radius: 10px;
   max-width: 300px;
@@ -162,54 +155,44 @@ h2 {
 }
 
 .card h3 {
-  margin: 20px 20px;
+  margin: 20px;
 }
 
-.card-2 {
+.donate-blurb {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: #d0d9d0;
+  justfy-content: center;
+  color: #143328;
 }
 
-.don-stack {
+.donate-stack {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   max-width: 900px;
+  font-size: 18px;
 }
 
 .donate {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 
 .don-img {
   height: 70px;
   width: 70px;
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 .donate p {
   color: #d0d9d0;
-  text-align: left;
+  text-align: center;
   margin: 4px;
 }
 
-.h1-donate {
-  font-size: 14px;
+.donate-blurb {
   color: white;
-  text-align: center;
-  font-weight: 400;
-}
-
-.card-2 p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 /*CONTACT FORM*/
@@ -232,17 +215,14 @@ h2 {
 }
 
 .con-p-div {
-  width: 45%;
+  width: 25%;
   margin: 15px 10px 10px 10px;
-}
 
+}
 
 .con-p {
   color: #143328;
-}
-
-.con-img {
-  border: 1px solid #143328;
+  font-size: 18px;
 }
 
 .form {
@@ -292,6 +272,12 @@ button {
   text-transform: uppercase;
   size: 12px;
   letter-spacing: 3px; 
+}
+
+.radio {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
 }
 
 

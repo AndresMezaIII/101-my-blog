@@ -4,16 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets\style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/99d78e1870.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Contact</title>
   </head>
   <body>
@@ -22,7 +12,7 @@
         <a href="home.html">Home</a>
         <a href="gallery.html">Gallery</a>
         <a href="#">Contact</a>
-        <a class="button-y button-control" href="#">SUBMIT</a>
+        <a class="button-yellow button-control" href="#">Apply</a>
       </nav>
     </header>
     <main>
@@ -34,16 +24,10 @@
             Communication is the foundation on which man has succeeded across
             millenia of history. We're no different. Whether you're a business
             owner looking to connect, a donor, or you just want to donate ideas,
-            we've love to hear from you!
+            we'd love to hear from you!
           </p>
         </div>
-        <img
-          src="assets\communication.png"
-          alt="A scene of a man and a woman communicating"
-          class="con-img"
-        />
       </div>
-
       <form class="form">
         <div class="input-container">
           <label>Subject:</label>
@@ -66,6 +50,24 @@
         <div class="input-container">
           <label>Message: </label>
           <textarea placeholder="Add your message..."></textarea>
+        </div>
+        <div class="radio">
+          <input
+            type="radio"
+            id="radio-1"
+            name="radio-1"
+            value="student"
+            class="input-container"
+          />
+          <label name="professional">Professional</label>
+          <input
+            type="radio"
+            id="radio-2"
+            name="radio-2"
+            value="professional"
+            class="input-container"
+          />
+          <label name="student">Student</label>
         </div>
         <button class="button-control">Send</button>
       </form>
